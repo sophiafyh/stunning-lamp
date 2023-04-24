@@ -1,0 +1,127 @@
+*{margin:0;padding:0;border:0;}
+.main{
+    width:100%;
+    position: relative;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+.bg{
+    width:100%;
+    vertical-align: top;
+}
+.music{
+    width:18.2%;
+    position: absolute;
+    top:4.5%;
+    right:8.2%;
+    animation: music 2s linear infinite;
+}
+.moon{
+    width:35.2%;
+    position: absolute;
+    top:-4.7%;
+    left:0;
+    animation: moon 1s linear 0.5s;
+    animation-fill-mode: both;
+}
+.mount{
+    width:100%;
+    position: absolute;
+    top:22%;
+    left:0;
+    animation: mount 1s ease 1.5s;
+    animation-fill-mode: both;
+}
+.left{
+    width:35.2%;
+    position: absolute;
+    top:36.2%;
+    left:0;
+    animation: left 1s ease 2.5s;
+    animation-fill-mode: both;
+}
+.right{
+    width:35.2%;
+    position: absolute;
+    top:37.6%;
+    right:0;
+    animation: right 1s ease 3.5s;
+    animation-fill-mode: both;
+}
+.lotus{
+    width:90%;
+    position: absolute;
+    bottom:-10%;
+    left:-10%;
+    animation: lotus 1s ease 4.5s;
+    animation-fill-mode: both;
+}
+.title{
+    width:33.3%;
+    position: absolute;
+    left:33.3%;
+    top:21%;
+    animation: title 1s ease 5.5s;
+    animation-fill-mode: both;
+}
+@keyframes music{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes moon{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes mount{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+@keyframes left{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes right{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes lotus{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes title{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
